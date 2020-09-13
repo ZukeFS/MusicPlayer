@@ -1,0 +1,183 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(120deg, #130f40, #4834d4, #8344ad);
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+    box-shadow:  5px 5px rgb(255, 19, 19);
+    border-radius: 5px;
+}
+
+.player{
+    background: black;
+    width: 450px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 19, 19);
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px black, -1px -1px 30px black;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 90%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.icons a{
+    color: rgb(255, 19, 19);
+    font-size: 33px;
+    transition: all 0.3s;
+}
+
+.icons a:hover{
+    color: rgb(255, 145, 145);
+    transition: ease-in-out 0.3s;
+}
+
+.img{
+    width: 60%;
+    margin: 30px auto;
+}
+
+img:hover{
+    box-shadow: 1px 5px 15px red, -1px -5px 15px red;
+    transform: scale(1.03);
+    transition: ease-in-out 0.3s;
+}
+
+.title{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.title h1{
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    font-size: 25px;
+}
+
+.title p{
+    color: white;
+    font-size: 12px;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 15px 0 7px;
+}
+
+.seek{
+    width: 100%;
+    height: 4px;
+    background: rgb(255, 19, 19);
+    border-radius: 50px;
+}
+
+.seek .fill{
+    width: 0%;
+    height: 5px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 1px 1px 15px black;
+    transition: all 0.3s;
+}
+
+.audio-buttons{
+    background: rgb(255, 19, 19);
+    margin: 40px auto;
+    height: 400px;
+    width: 100%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.audio-buttons a:hover{
+    color: white;
+}
+
+.play-btn{
+    padding: 45px 0 30px 0;
+}
+
+.play-btn a{
+    color: white;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.fa-backward:hover{
+    font-size: 25px;
+    transition: ease-in-out 0.3s;
+}
+
+.fa-forward:hover{
+    font-size: 25px;
+    transition: ease-in-out 0.3s;
+}
+
+.play-btn .play-pause{
+    background: rgb(255, 19, 19);
+    padding: 23px 15px 20px 18px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 7px black;
+}
+
+.play-pause:hover{
+    box-shadow: 1px 1px 15px black;
+}
+
+.play-btn .fa-play-circle{
+    font-size: 30px;
+}
+
+.repeat-btn a{
+    color: white;
+    margin: 0 40px;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+.repeat-btn button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(255, 19, 19);
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 15px rgb(194, 38, 38);
+    transition: all 0.3s;
+}
+
+.repeat-btn button:hover{
+    background: rgb(255, 19, 19);
+    color: white;
+    transition: ease-in-out 0.5s;
+}

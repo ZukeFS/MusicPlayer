@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵Zuke Music🎵</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="player">
+        <div class="container">
+            <!--------Top Icons-------->
+            <div class="icons">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <h1 style="font-weight: lighter;">ZUKE MUSIC</h1>
+                <a href="#">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+
+            <!--------Song Image-------->
+            <div class="img" style="box-shadow: 1px 1px 15px rgb(255, 19, 19), -1px -1px 15px rgb(255, 19, 19); transform: all 0.3s;">
+                <img src="../images/Cradles.jpg" id="img" alt="">
+            </div>
+            <audio src="../songs/Cradles.mp3"></audio>
+
+            <!--------Title-------->
+            <div class="title">
+                <h1 id="name">Cradles</h1>
+                <p id="artist">Vocalist - Sub Urban</p>
+            </div>
+
+            <!--------Time-------->
+            <div class="time">
+                <div id="current_time" style="margin-left: 7px;">0:00</div>
+                <div id="duration" style="margin-right: 7px;">3:29</div>
+            </div>
+
+            <!--------Seek Bar-------->
+            <div class="seek">
+                <div class="fill"></div>
+            </div>
+        </div>
+
+        <!--------Audio Buttons-------->
+        <div class="audio-buttons">
+            <div class="play-btn">
+                <a href="#">
+                    <i class="fas fa-backward prev"></i>
+                </a>
+                <a href="#" class="play-pause" onclick="">
+                    <i class="far fa-play-circle"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-forward next"></i>
+                </a>
+            </div>
+
+            <div class="repeat-btn">
+                <a href="#" class="repeat">
+                    <i class="fas fa-retweet"></i>
+                </a>
+                <span>
+                    <button class="decrease" onclick="decreaseVolume()">-</button>
+                    <a href="#" class="volume-up">
+                        <i class="fas fa-volume-up"></i>
+                    </a>
+                    <button class="increase" onclick="increaseVolume()">+</button>
+                </span>
+                <a href="#" onclick="shuffleSongs()"> 
+                    <i class="fas fa-random"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
